@@ -1,0 +1,165 @@
+#pet_img {
+    width : 300px;
+}
+
+
+#game {
+    display: none;
+}
+
+
+.image_box {
+	height: 50px;
+    width: 50px;
+    border-left: 1px solid #36a296;
+    border-right: 1px solid;
+    float: right;
+    border-bottom: 2px solid;
+}
+
+.separate {
+    height: 100px;
+    width: 50px;
+    border-left: 2px solid #fb4405;
+    border-right: 2px solid;
+    float: right;
+    border-bottom: 2px solid brown;
+	box-shadow: 2px 6px 2px brown;
+}
+
+.containergame {
+	box-shadow: 10px 0px 10px yellow;
+	background-color:#fff;
+}
+
+#perfect_counter, #dark_counter, #prime_counter {
+	margin-right : 15px;
+	font-size : 30px;
+	
+}
+
+
+.popup_content {
+  margin: 10px;
+  padding: 0 10px;
+  max-width: 60%;
+  border: 2px solid #444;
+  background: white;
+}
+
+body {
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(91,0,97,1) 43%, rgb(177 145 28) 100%);
+}
+
+.separate_red {
+	background-color: #fb4405;
+}
+
+#validate_button {
+	border-radius: 8px;
+    background-color: #0ebb0e;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+	
+}
+
+.link:hover, .link:active  {
+	text-decoration : none;
+}
+
+.link  {
+	float:left;
+	text-decoration : none;
+}
+
+#hint_button {
+	border-radius: 8px;
+    background-color: yellow;
+    color: white;
+    font-weight: 700;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+	float : right;
+	
+}
+
+.separate_white {
+	background-color: #fff;
+}
+
+.separate_green {
+	background-color: #0ddc35;
+}
+
+.separate_orange {
+	background-color: #fbb605;
+}
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #f9f9f9;
+    color: brown;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 125%; */
+    left: 50%;
+    border: 1px solid;
+    margin-left: -350px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
